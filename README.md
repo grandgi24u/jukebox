@@ -5,7 +5,7 @@ Clément GRANDGIRARD
 --> V1 en développement
 
 
-##Installation
+## Installation
 
 ---
 
@@ -27,7 +27,7 @@ Clément GRANDGIRARD
 
 Le projet est maintenant fonctionnel.
 
-##Fonctionnalitées
+## Fonctionnalitées
 
 ---
 
