@@ -10,10 +10,13 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
+// css and js charge
+app.use('/css', express.static(path.join(__dirname, 'addons/css')));
+app.use('/js', express.static(path.join(__dirname, 'addons/js')));
+
 // parse requests of content-type - application/json
 app.use(bodyParser.json());
 app.use(express.static('public'));
-
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));

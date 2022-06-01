@@ -1,11 +1,11 @@
+const user = require("../controllers/user.controller.js");
+
 module.exports = app => {
+    // ok
+    app.get("/connexion", user.formConnexion);
+    app.post("/connexion", user.connexion);
 
-    const user = require("../controllers/user.controller.js");
-
-    app.get("/inscription", user.inscription);
-    app.post("/inscription", user.createUser);
-
-    app.get("/connection", user.connection);
-
-
+    // en cours
+    app.get("/inscription", user.formInscription);
+    app.post("/inscription", user.inscription);
 }
